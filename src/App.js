@@ -16,13 +16,7 @@ const initialFormState = {
 
 function App() {
   const [selectedTab, setSelectedTab] = useState(0);
-  const [formInfo, setFormInfo] = useState({
-    name: "",
-    email: "test123@gmail.com",
-    phone: "",
-    quantity: "",
-    price: "",
-  });
+  const [formInfo, setFormInfo] = useState(initialFormState);
 
   const [formErrors, setFormErrors] = useState({
     email: "",
